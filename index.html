@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <title>Araucária</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <a href="index.html"><img src="imagens/logotipoextendidofinaltransparente.png" alt="Página inicial"></a>
+                <div class="searchbar">
+                    <select id="searchbar_selection">
+                        <option value="tudo">Tudo</option>
+                        <option value="casa">Casa</option>
+                        <option value="celulares">Celulares</option>
+                        <option value="computadores">Computadores</option>
+                        <option value="eletrodomesticos">Eletrodomésticos</option>
+                        <option value="moveis">Móveis</option>
+                    </select>
+                    <input type="search" id="searchbar">
+                    <button><img src="imagens/lupa.png" alt="lupe"></button>
+                </div>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Carrinho de Compras</a></li>
+                    <li><a href="#">Pedidos e Devoluções</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="slider">
+            <div class="slider-slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slider-slide first">
+                    <img src="https://i.pinimg.com/originals/c3/a5/b3/c3a5b332f9716abb1c67da38a12595e8.jpg" alt="imagem1"> 
+                </div>
+                <div class="slider-slide">
+                    <img src="https://i.pinimg.com/originals/9c/7b/e4/9c7be43979a736a8695361a544630b97.jpg" alt="imagem2">
+                </div>
+                <div class="slider-slide">
+                    <img src="https://geekblog.com.br/wp-content/uploads/2021/01/7fea175e13ba4a4b29672d15b2497367.jpg" alt="imagem3">
+                </div>
+                <div class="slider-slide">
+                    <img src="https://sindafsp.org.br/wp-content/uploads/2017/10/nature-lake-full-hd-wallpaper.jpg" alt="img4">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+        <script src="scripts/slider.js"></script>
+        <div class="container-padding">
+            <div class="products-slide">
+                <input type="radio" class="slide-controller" name="slide" checked />
+                <input type="radio" class="slide-controller" name="slide" />
+                <input type="radio" class="slide-controller" name="slide" />
+                <input type="radio" class="slide-controller" name="slide" />
+                <div class="slide-show" >
+                    <ul class="slides-list" >
+                        <li class="slide" >
+                            <div class="products-container">
+                                <h1> Brinquedos Mais Vendidos</h1>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/homem-de-ferro.png" alt="Boneco Articulado Homem de Ferro - 55cm">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Boneco Articulado Homem de Ferro - 55cm</h1>
+                                                            <p>R$ 249,99</p>
+                                                            <span>12x R$ 20,83 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/fate-stay-night.jpg" alt="Boneca Articulada Fate Stay Night - 23.5cm">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Boneca Articulada Fate Stay Night - 23.5cm</h1>
+                                                            <p>R$ 67,81</p>
+                                                            <span>12x R$ 5,65 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/aqua.jpg" alt="Boneca Aqua Konosuba - 26cm">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Boneca Aqua Konosuba - 26cm</h1>
+                                                            <p>R$ 149,99</p>
+                                                            <span>12x R$ 12,50 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="slide" >
+                            <div class="products-container">
+                                <h1>Eletrônicos Mais Vendidos</h1>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/iphone13.png" alt="Apple iPhone 13 Pro Max (256 GB) - Azul Sierra
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Apple iPhone 13 Pro Max (256 GB) - Azul Sierra</h1>
+                                                            <p>R$ 7874,10</p>
+                                                            <span>12x R$ 656,18 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/computador.jpg" alt="PC Gamer ITX Arena, Core i5 10400F, NVidia GeForce RTX 3050 8GB, Ram 16GB, SSD 240GB, Gabinete Gamer">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>PC Gamer ITX Arena, Core i5 10400F</h1>
+                                                            <p>R$ 5199,00</p>
+                                                            <span>12x R$ 433,25 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/tablet.png" alt="Tablet Samsung Galaxy Tab A7 Lite Wi-Fi 64GB 4gb Ram">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Tablet Samsung Galaxy Tab A7 Lite 64GB</h1>
+                                                            <p>R$ 999,99</p>
+                                                            <span>12x R$ 83,34 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="slide" >
+                            <div class="products-container">
+                                <h1>Roupas Mais Vendidas</h1>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/camisa.png" alt="Camiseta Arimlap Oceano Preto - Kanui">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Camiseta Arimlap Oceano Preto - Kanui</h1>
+                                                            <p>R$ 15,00</p>
+                                                            <span>12x R$ 1,25 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/sobretudo.jpg" alt="Sobretudo Feminino Trench Coat">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Sobretudo Feminino Trench Coat</h1>
+                                                            <p>R$ 172,99</p>
+                                                            <span>12x R$ 14,42 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/vestido.png" alt="Vestido Midi Preto Com Alças">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Vestido Midi Preto Com Alças</h1>
+                                                            <p>R$ 60,00</p>
+                                                            <span>12x R$ 5,00 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li class="slide" >
+                            <div class="products-container">
+                                <h1>Livros Mais Vendidos</h1>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/dracula.jpg" alt="Drácula - Dark Edition: Edição limitada para caçadores de vampiros Capa dura – Edição de colecionador, 24 outubro 2018">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Drácula - Dark Edition Capa dura</h1>
+                                                            <p>R$ 39,90</p>
+                                                            <span>12x R$ 3,33 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/minecraft.jpg" alt="A Bíblia Para Minecrafters Capa dura">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>A Bíblia Para Minecrafters Capa dura</h1>
+                                                            <p>R$ 55,37</p>
+                                                            <span>12x R$ 4,62 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="item">
+                                                <a href="#">
+                                                    <article class="card">
+                                                        <header>
+                                                            <img src="imagens/codigolimpo.png" alt="Código Limpo: Habilidades Práticas Do Agile Software">
+                                                        </header>
+                                                        <body class="card-body">
+                                                            <h1>Código Limpo - Agile Software</h1>
+                                                            <p>R$ 71,99</p>
+                                                            <span>12x R$ 5,99 sem juros</span>
+                                                            <button>Comprar</button>
+                                                        </body>
+                                                    </article>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+            </div>
+        </div>
+        <div class="container-padding">
+            <div class="products-container">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="products-container">
+                                <h1>Moda</h1>
+                                    <table>
+                                        <tr>
+                                            <td><h2>Camisas</h2></td>
+                                            <td><h2>Sapatos</h2></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/produto1.jpg" alt=""></div>
+                                            </td>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/produto2.jpg" alt=""></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Relógios</h2></td>
+                                            <td><h2>Sandálias</h2></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/produto3.jpg" alt=""></div>
+                                            </td>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/produto4.jpg" alt=""></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="products-container">
+                                <h1>Eletrodomésticos</h1>
+                                    <table>
+                                        <tr>
+                                            <td><h2>Celulares</h2></td>
+                                            <td><h2>Notebooks</h2></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/celular.jpg" alt=""></div>
+                                            </td>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/notebook.jpg" alt=""></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Impressoras</h2></td>
+                                            <td><h2>Fax</h2></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/impressora.jpg" alt=""></div>
+                                            </td>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/fax.jpg" alt=""></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="products-container">
+                                <h1>Casa</h1>
+                                    <table>
+                                        <tr>
+                                            <td><h2>Sofás</h2></td>
+                                            <td><h2>Camas</h2></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/sofa.jpg" alt=""></div>
+                                            </td>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/cama.jpg" alt=""></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2>Fogões</h2></td>
+                                            <td><h2>Geladeiras</h2></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/fogao.jpg" alt=""></div>
+                                            </td>
+                                            <td>
+                                                <div class="item"><img src="imagens/produtos/geladeira.jpeg" alt=""></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+<footer><img src="imagens/logo.png" alt="logitipo"></footer>
+</body>
+</html>
